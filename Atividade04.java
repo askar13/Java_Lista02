@@ -29,10 +29,10 @@ public class Atividade04 {
         int seleciona;
         do {
             System.out.println("\nMenu:");
-            System.out.println("1. Efetuar depósito");
-            System.out.println("2. Efetuar saque");
-            System.out.println("3. Consultar ativo bancário");
-            System.out.println("4. Finalizar programa");
+            System.out.println("1>> Efetuar depósito");
+            System.out.println("2>> Efetuar saque");
+            System.out.println("3>> Consultar ativo bancário");
+            System.out.println("4>> Finalizar programa");
             System.out.print("Selecione uma opção: ");
             seleciona = teclado.nextInt();
 
@@ -50,7 +50,7 @@ public class Atividade04 {
                     System.out.println("Programa finalizado. Até a próxima");
                     break;
                 default:
-                    System.out.println("Opção inválida.");
+                	System.out.println("Você selecionou uma opção inválida.");
             }
         } while (seleciona != 4);
 
