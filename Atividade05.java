@@ -10,26 +10,21 @@ public class Atividade05 {
         int l, c = 0;
         
         int valorMin = 1, valorMax = 100;
-        int espaçamento = (valorMax - valorMin);
+        int espacamento = (valorMax - valorMin);
 
         for(l= 0;l<matriz.length;l++) {
             for(c= 0;c<matriz.length;c++) {
-                int resultado = (int) (Math.random() * espaçamento) + 1;
+                int resultado = (int) (Math.random() * espacamento) + 1;
                 matriz[l][c] = resultado;
             }
         }
         
-        
-        
-        // populate a low_num_columns
         for(c= 0;c<matriz.length;c++)
         	menorNasColunas[c] = matriz[0][c];
             
-        // populate a high_num_rows
         for(l= 0;l<matriz.length;l++)
         	maiorNasLinhas[l] = matriz[l][0];
         
-        // Find a hight_num-r
         for(l= 0;l<matriz.length;l++) {
             for(c= 0;c<matriz.length;c++) {
                 if(matriz[l][c] > maiorNasLinhas[l]) {
@@ -38,7 +33,6 @@ public class Atividade05 {
             }
         }
         
-        // Find a low_num-c
         for(c= 0;c<matriz.length;c++) {
             for(l= 0;l<matriz.length;l++) {
                 if(matriz[l][c] < menorNasColunas[c]) {
