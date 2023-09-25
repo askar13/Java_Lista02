@@ -50,7 +50,7 @@ public class Atividade04 {
                     System.out.println("Programa finalizado. Até a próxima");
                     break;
                 default:
-                	System.out.println("Você selecionou uma opção inválida.");
+        	    System.out.println("Você selecionou uma opção inválida.");
             }
         } while (seleciona != 4);
 
